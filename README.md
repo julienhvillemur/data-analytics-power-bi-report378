@@ -6,12 +6,12 @@
 To access this project Power BI Destkop must be installed.
 
 ## Introduction
-This project will explore the use of Power BI to retrieve, transform and analyse sales data. The project will make use of robust power BI features in order to clean and modify data to suite our analytical requirements.
+This project will explore the use of Power BI to retrieve, transform and analyse sales data. The project will make use of robust power BI features in order to clean and modify data to suit our analytical requirements.
 
 ## Features
 
 ## Usage
-The first page of the Power BI report contains the executive summary. The summary page provides insights into sales data via visualisations listed in the Data Model section of this file. Use the featured slicer in order to analyse sales data between your required date range.
+The first page of the Power BI report contains the executive summary. The summary page provides insights into sales data via visualisations listed in the [Data Model section](#Data Model) of this file. Use the featured slicer in order to analyse sales data between your required date range.
 
 ### Data Loading
 The project involves analysis of 4 different sample tables. The main fact table within this project is the Orders table, which is retrieved from an Azure SQL database.
@@ -30,7 +30,7 @@ Use the following steps to retrieve the Orders table within Power BI Desktop:
 The execute summary within the report view of this project presents essential information concerning sales data. The summary visualisations pull data from the Orders, Products and Stores sample tables. The summary provides the following visualisations and information:
 Visualisation | Information
 | :---: | :---: 
-Card Visualisations | Total revenue, order & profit.
+Card Visualisations | Total revenue, orders & profit.
 Donut Charts | Revenue by country & store type.
 Line Chart | Revenue by start of year.
 Clustered bar chart | Orders by product category.
