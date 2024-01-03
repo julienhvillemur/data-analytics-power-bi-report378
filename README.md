@@ -14,7 +14,7 @@ This project will explore the use of Power BI to retrieve, transform and analyse
 The first page of the Power BI report contains the executive summary. The summary page provides insights into sales data via visualisations listed in the [Data Model section](#Data-Model) of this file. Use the featured slicer in order to analyse sales data between your required date range.
 
 ### Data Loading
-The project involves analysis of 4 different sample tables. The main fact table within this project is the Orders table, which is retrieved from an Azure SQL database.
+The project involves analysis of 4 different sample tables: Orders, Products, Stores and Customers. The main fact table within this project is the Orders table, which is retrieved from an Azure SQL database.
 Use the following steps to retrieve the Orders table within Power BI Desktop:
 1. Under the Home tab move to the Data section and click Get Data.
 2. Click SQL server.
