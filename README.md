@@ -47,7 +47,7 @@ Visualisation | Information
 Gauges | Current quarter orders, revenue and profit vs respective 10% target.
 Area Chart | Total revenue by year, quarter, month, day and product category.
 Scatter Chart | Total quantity vs profit per item.
-Matrix | Revenue, custmer numbers, amount ordered and profit for the top 10 products.
+Matrix | Revenue, customer numbers, amount ordered and profit for the top 10 products.
 
 
 ## Report Structure
