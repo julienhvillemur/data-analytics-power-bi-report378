@@ -37,6 +37,12 @@ Clustered bar chart | Orders by product category.
 KPIs | Target vs last quarter for revenue, profit & orders.
 Slicer | Date range (range customised by user to analyse by date periods).
 
+### Customer Detail
+
+
+### Product Detail
+This page of the report provides insights into the fincial and productive achievements of the company.
+
 ## Report Structure
 
 ## Troubleshooting
