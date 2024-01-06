@@ -57,7 +57,7 @@ The stores drillthrough page provides further insights from the locations presen
 Visualisation | Information
 |:---:|:---:
 Card Visual | Current store location of drillthrough.
-Gauge Filters | Year to date profit and revenue vs 20% goal value.
+Gauges | Year to date profit and revenue vs 20% goal value.
 Stacked Column Chart | Total orders by product category.
 Table | Year to date profit, total orders and total revenue for the top 5 products.
 
