@@ -30,7 +30,7 @@ Use the following steps to retrieve the Orders table within Power BI Desktop:
 The execute summary within the report view of this project presents essential information concerning sales data. The summary visualisations pull data from the Orders, Products and Stores sample tables. The summary provides the following visualisations and information:
 Visualisation | Information
 | :---: | :---: 
-Card Visualisations | Total revenue, orders & profit.
+Card Visuals | Total revenue, orders & profit.
 Donut Charts | Revenue by country & store type.
 Line Chart | Revenue by start of year.
 Clustered bar chart | Orders by product category.
@@ -47,13 +47,19 @@ Visualisation | Information
 Gauges | Current quarter orders, revenue and profit vs respective 10% target.
 Area Chart | Total revenue by year, quarter, month, day and product category.
 Scatter Chart | Total quantity vs profit per item.
-Matrix | Revenue, customer numbers, amount ordered and profit for the top 10 products.
+Table | Revenue, customer numbers, amount ordered and profit for the top 10 products.
 
 ### Stores Map
 A stores map page is included in this report to enable users to check the performance of stores across multiple countries. The page consists of the stores map and a slicer, which is used to filter the map by country. The map enables drillthrough from global regions down to sub regions of specific countries, all of which are represented as bubbles. For each bubble on the map, the user may hover over with the cursor to view a popout of the stores tooltip page. This stores tooltip popout reveals a profit gauge to the user, presenting the current year to date profit against the 20% profit goal for the year.
 
 ### Stores Drillthrough
-The stores drillthrough page provides further insights from the locations presented in the stores map. The page allows users to view orders by category, progress on profit and revenue goals and information on the top 5 products, all of which for a specific geographical location that the user has drilled through to.
+The stores drillthrough page provides further insights from the locations presented in the stores map. The page allows users to view orders by category, progress on profit and revenue goals and information on the top 5 products. It allows users to search through these parameters filtered by an individual store location that the user has drilled through to. The following visualisations are contained within the page:
+Visualisation | Information
+|:---:|:---:
+Card Visual | Current store location of drillthrough.
+Gauge Filters | Year to date profit and revenue vs 20% goal value.
+Stacked Column Chart | Total orders by product category.
+Table | Year to date profit, total orders and total revenue for the top 5 products.
 
 ## Report Structure
 
