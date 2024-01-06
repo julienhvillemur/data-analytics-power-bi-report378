@@ -49,6 +49,11 @@ Area Chart | Total revenue by year, quarter, month, day and product category.
 Scatter Chart | Total quantity vs profit per item.
 Matrix | Revenue, customer numbers, amount ordered and profit for the top 10 products.
 
+### Stores Map
+A stores map page is included in this report to enable users to check the performance of stores across multiple countries. The page consists of the stores map and a slicer, which is used to filter the map by country. The map enables drillthrough from global regions down to sub regions of specific countries, all of which are represented as bubbles. For each bubble on the map, the user may hover over with the cursor to view a popout of the stores tooltip page. This stores tooltip popout reveals a profit gauge to the user, presenting the current year to date profit against the 20% profit goal for the year.
+
+### Stores Drillthrough
+The stores drillthrough page provides further insights from the locations presented in the stores map. The page allows users to view orders by category, progress on profit and revenue goals and information on the top 5 products, all of which for a specific geographical location that the user has drilled through to.
 
 ## Report Structure
 
