@@ -34,7 +34,7 @@ Icon | Report Page
 |:---:|:---:
 ![image](https://github.com/julienhvillemur/data-analytics-power-bi-report378/assets/146137268/a704d4f0-11fb-4221-9353-7f2ed3ff857a) | Executive Summary
 ![image](https://github.com/julienhvillemur/data-analytics-power-bi-report378/assets/146137268/20fb3cc6-2ae4-4980-987b-d18d1ee86e35) | Customer Detail
-![image](https://github.com/julienhvillemur/data-analytics-power-bi-report378/assets/146137268/deaf1c5c-d1ef-46cf-b94f-fb7e94c5cae2) | Product Detail
+![image](https://github.com/julienhvillemur/data-analytics-power-bi-report378/assets/146137268/be8c1769-940b-4b9c-ab2a-bba5f61c3682) | Product Detail
 ![image](https://github.com/julienhvillemur/data-analytics-power-bi-report378/assets/146137268/6d4f76c0-6d2a-4b9b-b82a-41983517781c) | Stores Map
 
 ## Data Model
