@@ -11,7 +11,6 @@ This project will explore the use of Power BI to retrieve, transform and analyse
 ## Features
 
 ## Usage
-The first page of the Power BI report contains the executive summary. The summary page provides insights into sales data via visualisations listed in the [Data Model section](#Data-Model) of this file. Use the featured slicer in order to analyse sales data between your required date range.
 
 ### Data Loading
 The project involves analysis of 4 different sample tables: Orders, Products, Stores and Customers. The main fact table within this project is the Orders table, which is retrieved from an Azure SQL database.
@@ -22,8 +21,21 @@ Use the following steps to retrieve the Orders table within Power BI Desktop:
 4. Click OK.  ![image](https://github.com/julienhvillemur/data-analytics-power-bi-report378/assets/146137268/defac103-9a00-4658-81dd-d473b4e29549)  ![image](https://github.com/julienhvillemur/data-analytics-power-bi-report378/assets/146137268/48524f0d-aeb6-40cb-a48e-b09b97899da9)
 5. Click orders_db [3], under which click on the orders table to select it.
 6. Click load.  ![image](https://github.com/julienhvillemur/data-analytics-power-bi-report378/assets/146137268/c9ff280f-87cb-4bf0-a9ee-d488a769ff96)
+   
+### Report Pages
+The first page of the Power BI report contains the executive summary. The summary page provides insights into sales data via visualisations listed in the [Data Model section](#Data-Model) of this file. Use the featured slicer in order to analyse sales data between your required date range.
 
+The Customer Detail page then provides more in depth information about the sample sales data concerning revenue and order quantities in relation to customers.
 
+### Navigation
+To move between pages of the report use the navigation bar at the left-hand side of the page.
+Click on the following icons to move to a specific page:
+Icon | Report Page
+|:---:|:---:
+![image](https://github.com/julienhvillemur/data-analytics-power-bi-report378/assets/146137268/a704d4f0-11fb-4221-9353-7f2ed3ff857a) | Executive Summary
+![image](https://github.com/julienhvillemur/data-analytics-power-bi-report378/assets/146137268/20fb3cc6-2ae4-4980-987b-d18d1ee86e35) | Customer Detail
+![image](https://github.com/julienhvillemur/data-analytics-power-bi-report378/assets/146137268/deaf1c5c-d1ef-46cf-b94f-fb7e94c5cae2) | Product Detail
+![image](https://github.com/julienhvillemur/data-analytics-power-bi-report378/assets/146137268/6d4f76c0-6d2a-4b9b-b82a-41983517781c) | Stores Map
 
 ## Data Model
 ### Executive Summary
@@ -36,6 +48,7 @@ Line Chart | Revenue by start of year.
 Clustered bar chart | Orders by product category.
 KPIs | Target vs last quarter for revenue, profit & orders.
 Slicer | Date range (range customised by user to analyse by date periods).
+Table | Category, revenue, customers and amount ordered for the top 10 products by revenue.
 
 ### Customer Detail
 
