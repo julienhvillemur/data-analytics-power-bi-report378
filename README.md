@@ -51,7 +51,15 @@ Slicer | Date range (range customised by user to analyse by date periods).
 Table | Category, revenue, customers and amount ordered for the top 10 products by revenue.
 
 ### Customer Detail
-
+Following on from the Executive Summary, the Customer Detail page is available for analysis of customer-related sales data. This can be viewed over selected time periods with the included slicer. The page presents customer data to users based on product types, country of purchase, total orders and total revenue. The following visualisations are included on the page:
+Visualisation | Information
+| :---: | :---: 
+Card Visuals | Unique customers, revenue per customer, top customer revenue, top customer & top customer order amount.
+Line Chart | Total customers over time.
+Stacked Column Chart | Total customers per product category.
+Slicer | Date range (range customised by user to analyse by date periods).
+Donut Chart | Total customers by country.
+Table | Total orders and revenue for the top 20 customer (by revenue).
 
 ### Product Detail
 This page of the report provides insights into the financial and productive achievements of the organisation recorded in the sample data. It allows users to view revenue, profit and order numbers filtered by selected product categories and countries. The data presented on the Product Detail page is derived from the Orders, Products and Customers sample tables. The page contains the following visualisations and information:
