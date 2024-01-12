@@ -72,19 +72,31 @@ The following steps have been used to handle each type of table:
 #### Products Table
 1. Create units and values columns from the weight column using the 'Column From Examples' feature.
 2. Ensure blank entries are replaced with kg.
-3. Convert all values to kg.
+3. Convert all values to kg and L respectively.
 
 #### Stores Table
 1. Remove rows with missing values.
 2. Create a calculated column of full country names based on the country abreviations in the country code column.
 
 #### Customers Table
-1. Add the first name and last name columns together to form a column named 'Full Name'.
+1. Remove rows with missing values.
+2. Add the first name and last name columns together to form a column named 'Full Name'.
 
 ### Report Pages
-The first page of the Power BI report contains the executive summary. The summary page provides insights into sales data via visualisations listed in the [Data Model](#Data-Model) section of this file. Use the featured slicer in order to analyse sales data between your required date range.
 
-The Customer Detail page then provides more in depth information about the sample sales data concerning revenue and order quantities in relation to customers.
+#### Executive Summary
+The first page of the Power BI report contains the executive summary. The summary page provides insights into sales data via visualisations listed in the [Data Model](#Data-Model) section of this file. Use the featured slicer in order to analyse sales data between your required date range.![image](https://github.com/julienhvillemur/data-analytics-power-bi-report378/assets/146137268/f78adb6c-510a-4a27-b79d-7dfe0e12fd30)
+
+#### Customer Detail
+The Customer Detail page then provides more in depth information about the sample sales data concerning revenue and order quantities in relation to customers. Use the visualisations to filter other graphics on the page and use the slicer to view existing and projected data.![image](https://github.com/julienhvillemur/data-analytics-power-bi-report378/assets/146137268/e52b4cdc-98ce-4b5c-8adf-b3e885094d31)
+
+
+#### Product Detail
+Information concerning revenue, profit and order numbers by date, country and product category is presented under the Product Detail page. Select data point in the area chart to view progress on orders, revenue and profit targets in the featured gauges. Filter by country and product category by clicking the filter at the top left of the page and selecting different options.![image](https://github.com/julienhvillemur/data-analytics-power-bi-report378/assets/146137268/17c63fbd-ba11-489a-bd5c-5cb702b5912d)
+
+#### Stores Map
+The Stores Map allows users to view progress on profit goals in specific geographic locations. Use the features slicer and drillthrough settings to view progress from continents down to individual counties. Hover over individual bubbles on the map to view profit goals featured from the Stores Tooltip page. Right click the bubble and select Drill through to be directed to the Stores Drillthrough page, filtered by the specific location of the selected map bubble.![image](https://github.com/julienhvillemur/data-analytics-power-bi-report378/assets/146137268/80cbdfe6-8d7b-4c5d-b59a-2d7870f22b52)
+
 
 ### Navigation
 To move between pages of the report use the navigation bar at the left-hand side of the page.
