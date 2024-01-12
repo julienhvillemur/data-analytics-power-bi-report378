@@ -7,7 +7,7 @@
 ## Overview
 
 ## Prerequisites
-To access this project Power BI Destkop must be installed or a method to connect and interact with the Orders Postgres database. If Power BI desktop is available to use then a Microsoft Azure SQL server will be needed to retreive the data used in this Power BI project. Similiarly, access to the Postgres database will require an available Microsoft Azure server, as well as an SQL connection and interpretation application such as SQLTools (extension within VSCode) and VSCode.
+To access this project Power BI Destkop must be installed or a method to connect and interact with the Orders Postgres database. If Power BI desktop is available to use then a Microsoft Azure SQL server or local CSV table will be needed to retreive the data used in this Power BI project. Similiarly, access to the Postgres database will require an available Microsoft Azure server, as well as an SQL connection and interpretation application such as SQLTools (extension within VSCode) and VSCode.
 
 ## Introduction
 This project will explore the use of Power BI to retrieve, transform and analyse sales data. The project will make use of robust power BI features in order to clean and modify data to suit our analytical requirements.
@@ -27,6 +27,12 @@ Use the following steps to retrieve the Orders table within Power BI Desktop:
 4. Click OK.  ![image](https://github.com/julienhvillemur/data-analytics-power-bi-report378/assets/146137268/defac103-9a00-4658-81dd-d473b4e29549)  ![image](https://github.com/julienhvillemur/data-analytics-power-bi-report378/assets/146137268/48524f0d-aeb6-40cb-a48e-b09b97899da9)
 5. Click orders_db [3], under which click on the orders table to select it.
 6. Click load.  ![image](https://github.com/julienhvillemur/data-analytics-power-bi-report378/assets/146137268/c9ff280f-87cb-4bf0-a9ee-d488a769ff96)
+
+The Products dimension table is obtained from a local Products.csv file via the Get Data method in Power BI Desktop. Follow these steps to import the csv file.
+1. Under the Home tab go to the Data section.
+2. Click 'Get Data'.
+3. Selection 'Text/CSV'.
+4. Find your csv file in the directory and click 'Open'.
 
 #### Postgres Database
 To access the sales data directly via the Postgres database use an SQL connection application. For this example we will use the SQLTools Extension within VSCode as follows:
