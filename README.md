@@ -19,7 +19,9 @@ This project will explore the use of Power BI to retrieve, transform and analyse
 ### Data Loading
 
 #### Power BI Access
-The project involves analysis of 4 different sample tables: Orders, Products, Stores and Customers. The main fact table within this project is the Orders table, which is retrieved from an Azure SQL database.
+The project involves analysis of 4 different sample tables: Orders, Products, Stores and Customers. 
+
+The main fact table within this project is the Orders table, which is retrieved from an Azure SQL database.
 Use the following steps to retrieve the Orders table within Power BI Desktop:
 1. Under the Home tab move to the Data section and click Get Data.
 2. Click SQL server.
@@ -33,6 +35,21 @@ The Products dimension table is obtained from a local Products.csv file via the 
 2. Click 'Get Data'.
 3. Selection 'Text/CSV'.
 4. Find your csv file in the directory and click 'Open'.
+
+The Stores dimension table in this project is obtained from Azure Blob storage. Use the following steps to obtain the table using this method:
+1. Under the Data section of the Home tab select 'Get Data'.
+2. Click 'More...'.
+   ![image](https://github.com/julienhvillemur/data-analytics-power-bi-report378/assets/146137268/fe57f272-9d11-47f5-beaa-385edecdb843)
+4. Click onto the Azure section and select 'Azure Blob Storage'.
+5. Click 'Connect'.![image](https://github.com/julienhvillemur/data-analytics-power-bi-report378/assets/146137268/2528910c-4244-421d-83b4-f2c07fe99f17)
+6. Enter your Azure Blob storage account name.![image](https://github.com/julienhvillemur/data-analytics-power-bi-report378/assets/146137268/a790d30c-5800-4643-aebb-7a73308dd9ff)
+7. Enter your account key.![image](https://github.com/julienhvillemur/data-analytics-power-bi-report378/assets/146137268/c30aeecf-b0b3-4da0-a6f0-3a280cc1b594)
+8. Select under 'powerbistorage2 [1]' select 'data-analytics', then click load to retrieve the Stores table.![image](https://github.com/julienhvillemur/data-analytics-power-bi-report378/assets/146137268/2799b0cf-08a5-4196-a677-6f8c326828ba)
+
+
+
+
+
 
 #### Postgres Database
 To access the sales data directly via the Postgres database use an SQL connection application. For this example we will use the SQLTools Extension within VSCode as follows:
