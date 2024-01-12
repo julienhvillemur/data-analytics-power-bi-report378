@@ -1,16 +1,23 @@
 # Power BI Data Analytics Project
 
 # Table of Contents
-1. [Prerequisites](#prerequisites)
-2. [Introduction](#introduction)
-
-## Overview
+1. [Prerequisites](#Prerequisites)
+2. [Introduction](#Introduction)
+3. [Usage](#Usage)
+   - [Data Loading](#Data-Loading)
+        - [Power BI Access](#Power-BI-Access)
+           - [Orders Table](#Orders-Table)
+           - [Products Table](#Products-Table)
+           - [Stores Table](#Stores-table)
+           - [Customers Table](#Customers-table)
+5. [Data Model](#Data-Model)
+6. [Licence](#Data-Model)
 
 ## Prerequisites
 To access this project Power BI Destkop must be installed or a method to connect and interact with the Orders Postgres database. If Power BI desktop is available to use then a Microsoft Azure SQL server or local CSV table will be needed to retreive the data used in this Power BI project. Similiarly, access to the Postgres database will require an available Microsoft Azure server, as well as an SQL connection and interpretation application such as SQLTools (extension within VSCode) and VSCode.
 
 ## Introduction
-This project will explore the use of Power BI to retrieve, transform and analyse sales data from a commercial orders database. The project will make use of robust power BI features in order to clean and modify data to suit our analytical requirements.
+This project will explore the use of Power BI to retrieve, transform and analyse sales data from a commercial orders database. The project will make use of robust Power BI features in order to clean and modify data to suit our analytical requirements. This file will instruct on how to load data from the orders database and it will detail the steps taken to prepare the data for visualisation and analysis. Specific visualisations and data formed by creating measures and applying graphics have been featured and explained in this file for each section of the project. For users unable to access Power BI in this project, a Postgres server is available for analysis of the Orders database via SQL.
 
 ## Usage
 
@@ -90,13 +97,11 @@ The first page of the Power BI report contains the executive summary. The summar
 #### Customer Detail
 The Customer Detail page then provides more in depth information about the sample sales data concerning revenue and order quantities in relation to customers. Use the visualisations to filter other graphics on the page and use the slicer to view existing and projected data.![image](https://github.com/julienhvillemur/data-analytics-power-bi-report378/assets/146137268/e52b4cdc-98ce-4b5c-8adf-b3e885094d31)
 
-
 #### Product Detail
 Information concerning revenue, profit and order numbers by date, country and product category is presented under the Product Detail page. Select data point in the area chart to view progress on orders, revenue and profit targets in the featured gauges. Filter by country and product category by clicking the filter at the top left of the page and selecting different options.![image](https://github.com/julienhvillemur/data-analytics-power-bi-report378/assets/146137268/17c63fbd-ba11-489a-bd5c-5cb702b5912d)
 
-#### Stores Map
+#### Stores Map, Drillthrough & Tooltip
 The Stores Map allows users to view progress on profit goals in specific geographic locations. Use the features slicer and drillthrough settings to view progress from continents down to individual counties. Hover over individual bubbles on the map to view profit goals featured from the Stores Tooltip page. Right click the bubble and select Drill through to be directed to the Stores Drillthrough page, filtered by the specific location of the selected map bubble.![image](https://github.com/julienhvillemur/data-analytics-power-bi-report378/assets/146137268/80cbdfe6-8d7b-4c5d-b59a-2d7870f22b52)
-
 
 ### Navigation
 To move between pages of the report use the navigation bar at the left-hand side of the page.
@@ -107,6 +112,9 @@ Icon | Report Page
 ![image](https://github.com/julienhvillemur/data-analytics-power-bi-report378/assets/146137268/20fb3cc6-2ae4-4980-987b-d18d1ee86e35) | Customer Detail
 ![image](https://github.com/julienhvillemur/data-analytics-power-bi-report378/assets/146137268/be8c1769-940b-4b9c-ab2a-bba5f61c3682) | Product Detail
 ![image](https://github.com/julienhvillemur/data-analytics-power-bi-report378/assets/146137268/6d4f76c0-6d2a-4b9b-b82a-41983517781c) | Stores Map
+
+### SQL
+If it is not possible to access this project via Power BI then queries can be made directly onto the orders database via the Postgres server using SQL. Once connected to the server, use an SQL interpreter to manipulate, analyse and form insights upon the sales data featured in this project.
 
 ## Data Model
 ### Executive Summary
