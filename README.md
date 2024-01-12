@@ -10,9 +10,7 @@
 To access this project Power BI Destkop must be installed or a method to connect and interact with the Orders Postgres database. If Power BI desktop is available to use then a Microsoft Azure SQL server or local CSV table will be needed to retreive the data used in this Power BI project. Similiarly, access to the Postgres database will require an available Microsoft Azure server, as well as an SQL connection and interpretation application such as SQLTools (extension within VSCode) and VSCode.
 
 ## Introduction
-This project will explore the use of Power BI to retrieve, transform and analyse sales data. The project will make use of robust power BI features in order to clean and modify data to suit our analytical requirements.
-
-## Features
+This project will explore the use of Power BI to retrieve, transform and analyse sales data from a commercial orders database. The project will make use of robust power BI features in order to clean and modify data to suit our analytical requirements.
 
 ## Usage
 
@@ -21,6 +19,7 @@ This project will explore the use of Power BI to retrieve, transform and analyse
 #### Power BI Access
 The project involves analysis of 4 different sample tables: Orders, Products, Stores and Customers. 
 
+##### Orders Table
 The main fact table within this project is the Orders table, which is retrieved from an Azure SQL database.
 Use the following steps to retrieve the Orders table within Power BI Desktop:
 1. Under the Home tab move to the Data section and click Get Data.
@@ -30,12 +29,14 @@ Use the following steps to retrieve the Orders table within Power BI Desktop:
 5. Click orders_db [3], under which click on the orders table to select it.
 6. Click load.  ![image](https://github.com/julienhvillemur/data-analytics-power-bi-report378/assets/146137268/c9ff280f-87cb-4bf0-a9ee-d488a769ff96)
 
+##### Products Table
 The Products dimension table is obtained from a local Products.csv file via the Get Data method in Power BI Desktop. Follow these steps to import the csv file.
 1. Under the Home tab go to the Data section.
 2. Click 'Get Data'.
 3. Selection 'Text/CSV'.
 4. Find your csv file in the directory and click 'Open'.
 
+##### Stores Table
 The Stores dimension table in this project is obtained from Azure Blob storage. Use the following steps to obtain the table using this method:
 1. Under the Data section of the Home tab select 'Get Data'.
 2. Click 'More...'.
@@ -46,10 +47,8 @@ The Stores dimension table in this project is obtained from Azure Blob storage. 
 7. Enter your account key.![image](https://github.com/julienhvillemur/data-analytics-power-bi-report378/assets/146137268/c30aeecf-b0b3-4da0-a6f0-3a280cc1b594)
 8. Select under 'powerbistorage2 [1]' select 'data-analytics', then click load to retrieve the Stores table.![image](https://github.com/julienhvillemur/data-analytics-power-bi-report378/assets/146137268/2799b0cf-08a5-4196-a677-6f8c326828ba)
 
-
-
-
-
+##### Customers Table
+The Customers table is available as a zip file. Unpack this file in your local directly and load the Customers table csv file into Power BI. To do this use the 'Get Data' feature as per the instructions within the [Products Table](#Products-Table) section.
 
 #### Postgres Database
 To access the sales data directly via the Postgres database use an SQL connection application. For this example we will use the SQLTools Extension within VSCode as follows:
@@ -61,8 +60,29 @@ To access the sales data directly via the Postgres database use an SQL connectio
 6. Click 'Save Connection'.
 7. Click 'Connect Now'.
 
+### Data Cleaning & Transformation
+In order to analyse and form visualisations of the sales data, cleaning and transformation must first be performed. The data is first loaded into the Power Query Editor for this purpose.
+The following steps have been used to handle each type of table:
+
+#### Orders Table
+1. Remove card number column for security.
+2. split the order date and shipping date columns to seperate out the time and dates.
+3. Remove rows with missing values in the order date column.
+
+#### Products Table
+1. Create units and values columns from the weight column using the 'Column From Examples' feature.
+2. Ensure blank entries are replaced with kg.
+3. Convert all values to kg.
+
+#### Stores Table
+1. Remove rows with missing values.
+2. Create a calculated column of full country names based on the country abreviations in the country code column.
+
+#### Customers Table
+1. Add the first name and last name columns together to form a column named 'Full Name'.
+
 ### Report Pages
-The first page of the Power BI report contains the executive summary. The summary page provides insights into sales data via visualisations listed in the [Data Model section](#Data-Model) of this file. Use the featured slicer in order to analyse sales data between your required date range.
+The first page of the Power BI report contains the executive summary. The summary page provides insights into sales data via visualisations listed in the [Data Model](#Data-Model) section of this file. Use the featured slicer in order to analyse sales data between your required date range.
 
 The Customer Detail page then provides more in depth information about the sample sales data concerning revenue and order quantities in relation to customers.
 
@@ -121,8 +141,5 @@ Gauges | Year to date profit and revenue vs 20% goal value.
 Stacked Column Chart | Total orders by product category.
 Table | Year to date profit, total orders and total revenue for the top 5 products.
 
-## Report Structure
-
-## Troubleshooting
-
 ## Licence
+Open source.
