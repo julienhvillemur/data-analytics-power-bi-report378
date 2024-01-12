@@ -1,9 +1,13 @@
 # Power BI Data Analytics Project
 
+# Table of Contents
+1. [Prerequisites](#prerequisites)
+2. [Introduction](#introduction)
+
 ## Overview
 
 ## Prerequisites
-To access this project Power BI Destkop must be installed.
+To access this project Power BI Destkop must be installed or a method to connect and interact with the sales data SQL server. If Power BI desktop is available to use then a Microsoft Azure database will be needed to retreive the data used in this Power BI project.
 
 ## Introduction
 This project will explore the use of Power BI to retrieve, transform and analyse sales data. The project will make use of robust power BI features in order to clean and modify data to suit our analytical requirements.
