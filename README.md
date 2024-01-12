@@ -7,7 +7,7 @@
 ## Overview
 
 ## Prerequisites
-To access this project Power BI Destkop must be installed or a method to connect and interact with the sales data SQL server. If Power BI desktop is available to use then a Microsoft Azure database will be needed to retreive the data used in this Power BI project.
+To access this project Power BI Destkop must be installed or a method to connect and interact with the Orders Postgres database. If Power BI desktop is available to use then a Microsoft Azure SQL server will be needed to retreive the data used in this Power BI project. Similiarly, access to the Postgres database will require an available Microsoft Azure server, as well as an SQL connection and interpretation application such as SQLTools (extension within VSCode) and VSCode.
 
 ## Introduction
 This project will explore the use of Power BI to retrieve, transform and analyse sales data. The project will make use of robust power BI features in order to clean and modify data to suit our analytical requirements.
@@ -17,6 +17,8 @@ This project will explore the use of Power BI to retrieve, transform and analyse
 ## Usage
 
 ### Data Loading
+
+#### Power BI Access
 The project involves analysis of 4 different sample tables: Orders, Products, Stores and Customers. The main fact table within this project is the Orders table, which is retrieved from an Azure SQL database.
 Use the following steps to retrieve the Orders table within Power BI Desktop:
 1. Under the Home tab move to the Data section and click Get Data.
@@ -25,7 +27,17 @@ Use the following steps to retrieve the Orders table within Power BI Desktop:
 4. Click OK.  ![image](https://github.com/julienhvillemur/data-analytics-power-bi-report378/assets/146137268/defac103-9a00-4658-81dd-d473b4e29549)  ![image](https://github.com/julienhvillemur/data-analytics-power-bi-report378/assets/146137268/48524f0d-aeb6-40cb-a48e-b09b97899da9)
 5. Click orders_db [3], under which click on the orders table to select it.
 6. Click load.  ![image](https://github.com/julienhvillemur/data-analytics-power-bi-report378/assets/146137268/c9ff280f-87cb-4bf0-a9ee-d488a769ff96)
-   
+
+#### Postgres Database
+To access the sales data directly via the Postgres database use an SQL connection application. For this example we will use the SQLTools Extension within VSCode as follows:
+1. Click 'Add New Connection' under the SQLTools extension, which will load a connection assistant page.
+2. Select PostgresSQL.
+3. Input the details for the Postgres Orders database.
+4. Select SQLTools Driver Credentials under the 'Use Password' section.
+5. Click 'Test Connection' and ensure that 'Successfully Connected!' is shown in green.
+6. Click 'Save Connection'.
+7. Click 'Connect Now'.
+
 ### Report Pages
 The first page of the Power BI report contains the executive summary. The summary page provides insights into sales data via visualisations listed in the [Data Model section](#Data-Model) of this file. Use the featured slicer in order to analyse sales data between your required date range.
 
