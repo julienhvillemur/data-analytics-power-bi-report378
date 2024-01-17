@@ -32,7 +32,7 @@
 7. [Licence](#Data-Model)
 
 ## Prerequisites
-To access this project Power BI Destkop must be installed or a method to connect and interact with the Orders Postgres database. If Power BI desktop is available to use then a Microsoft Azure SQL server or local CSV table will be needed to retreive the data used in this Power BI project. Similiarly, access to the Postgres database will require an available Microsoft Azure server, as well as an SQL connection and interpretation application such as SQLTools (extension within VSCode) and VSCode.
+To access this project Power BI Destkop must be installed or a method to connect and interact with the Orders Postgres database. If Power BI desktop is available to use then a Microsoft Azure SQL server or local CSV table will be needed to retreive the data used in this Power BI project. In absence of Power BI, access to the Postgres database will require an available Microsoft Azure server, as well as an SQL connection and interpretation application such as SQLTools (extension within VSCode) and VSCode.
 
 ## Introduction
 This project will explore the use of Power BI to retrieve, transform and analyse sales data from a commercial orders database. The project will make use of robust Power BI features in order to clean and modify data to suit our analytical requirements. This file will instruct on how to load data from the orders database and it will detail the steps taken to prepare the data for visualisation and analysis. Specific visualisations and data formed by creating measures and applying graphics have been featured and explained in this file for each section of the project. For users unable to access Power BI in this project, a Postgres server is available for analysis of the Orders database via SQL.
